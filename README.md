@@ -9,3 +9,4 @@ API Rest realizada para el curso de Spring de Platzi.
 - Postgres 12.
 - Docker-compose.
 - Spring boot 2.5.2
+- Spring Data JPA.
