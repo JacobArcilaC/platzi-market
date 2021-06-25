@@ -1,10 +1,9 @@
 package com.platzi.platzimarket.domain.repository;
 
-import com.platzi.platzimarket.domain.dto.Product;
+import com.platzi.platzimarket.domain.Product;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.OptionalInt;
 
 public interface ProductRepository {
     List<Product> getAll();

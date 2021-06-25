@@ -1,6 +1,6 @@
 package com.platzi.platzimarket.web.controller;
 
-import com.platzi.platzimarket.domain.dto.Product;
+import com.platzi.platzimarket.domain.Product;
 import com.platzi.platzimarket.domain.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,7 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/products")

@@ -1,6 +1,6 @@
 package com.platzi.platzimarket.domain.service;
 
-import com.platzi.platzimarket.domain.dto.Product;
+import com.platzi.platzimarket.domain.Product;
 import com.platzi.platzimarket.domain.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

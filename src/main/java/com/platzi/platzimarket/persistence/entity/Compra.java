@@ -12,11 +12,14 @@ public class Compra {
     @Column(name = "id_compra")
     private Integer idCompra;
 
+    @Column(name = "id_cliente")
+    private String idCliente;
+
     @ManyToOne
     @JoinColumn(name = "id_cliente", updatable = false, insertable = false)
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "compra")
+    @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL})
     private List<ComprasProducto> productos;
 
     private LocalDateTime fecha;
@@ -27,6 +30,22 @@ public class Compra {
     private String comentario;
     private Boolean estado;
 
+    public Integer getIdCompra() {
+        return idCompra;
+    }
+
+    public void setIdCompra(Integer idCompra) {
+        this.idCompra = idCompra;
+    }
+
+    public String getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
+    }
+
     public Cliente getCliente() {
         return cliente;
     }
@@ -35,12 +54,12 @@ public class Compra {
         this.cliente = cliente;
     }
 
-    public Integer getIdCompra() {
-        return idCompra;
+    public List<ComprasProducto> getProductos() {
+        return productos;
     }
 
-    public void setIdCompra(Integer idCompra) {
-        this.idCompra = idCompra;
+    public void setProductos(List<ComprasProducto> productos) {
+        this.productos = productos;
     }
 
     public LocalDateTime getFecha() {
