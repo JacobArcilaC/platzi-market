@@ -1,8 +1,8 @@
-# PLatzi Market API
+# Platzi Market API
 
 API Rest realizada para el curso de Spring de Platzi.
 
-##Techologias
+## Techologias
 
 - Graddle.
 - Open JDK 11.
